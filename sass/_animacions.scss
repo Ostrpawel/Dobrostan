@@ -1,0 +1,40 @@
+@keyframes pulse {
+	0% {
+		border: 2px solid #d3d3d3;
+	}
+	10% {
+		border: 2px solid #6699ff;
+		box-shadow: 0 0 15px #99ccff;
+	}
+	20% {
+		border: 2px solid #d3d3d3;
+	}
+	30% {
+		border: 2px solid #6699ff;
+		box-shadow: 0 0 15px #99ccff;
+	}
+	40% {
+		border: 2px solid #d3d3d3;
+	}
+	50% {
+		border: 2px solid #6699ff;
+		box-shadow: 0 0 15px #99ccff;
+	}
+	60% {
+		border: 2px solid #d3d3d3;
+	}
+	70% {
+		border: 2px solid #6699ff;
+		box-shadow: 0 0 15px #99ccff;
+	}
+	80% {
+		border: 2px solid #d3d3d3;
+	}
+	90% {
+		border: 2px solid #6699ff;
+		box-shadow: 0 0 15px #99ccff;
+	}
+	100% {
+		border: 2px solid #d3d3d3;
+	}
+}
