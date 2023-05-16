@@ -30,7 +30,7 @@ body {
 /*button-nav*/
 
 .button {
-	position: absolute;
+	position: fixed;
 	padding: 1rem;
 	top: 10px;
 	right: 20px;
@@ -42,6 +42,7 @@ body {
 	background-color: $bgcolor;
 	font-size: 2em;
 	cursor: pointer;
+	z-index: 1500;
 	animation: pulse 10s forwards;
 	&__box {
 		display: flex;
@@ -69,34 +70,45 @@ body {
 	display: inline-block;
 	list-style: none;
 	right: 0px;
-	top: 75px;
-	width: 200px;
-	line-height: 0em;
+	top: 74px;
+	width: 50%;
+	line-height: 2em;
 	text-align: center;
-	background-color: $bgcolor;
+	transform: translateX(100%);
+	background-color: rgba(48, 48, 48, 0.99);
 	font-size: 1.5em;
 	opacity: 0;
-	cursor: pointer;
+	// cursor: pointer;
 	transition: 1s;
 	z-index: 900;
+	&--active{
+		opacity: 1;
+		right: 0px;
+		line-height: 2em;
+		transform: translateX(0);
+	}
 	li {
 		a {
 			color: #d3d3d3;
+			transition: color .7s;
 		}
 	}
 	li:hover {
-		li {
+		
 			a {
 				color: $BtnColor;
 			}
-		}
+		
 	}
+
 }
-.button:hover ~ .menu {
-	opacity: 1;
-	right: 0px;
-	line-height: 1.7em;
-}
+// .button:hover ~ .menu {
+// 	opacity: 1;
+// 	right: 0px;
+// 	line-height: 1.7em;
+// }
+
+
 
 /*header*/
 
