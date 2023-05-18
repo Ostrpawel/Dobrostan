@@ -113,7 +113,7 @@ body {
   width: 50%;
   line-height: 2em;
   text-align: center;
-  transform: translateX(100%);
+  transform: rotateY(180deg);
   background-color: rgba(48, 48, 48, 0.99);
   font-size: 1.5em;
   opacity: 0;
@@ -122,9 +122,7 @@ body {
 }
 .menu--active {
   opacity: 1;
-  right: 0px;
-  line-height: 2em;
-  transform: translateX(0);
+  transform: rotateY(0deg);
 }
 .menu li a {
   color: #d3d3d3;
